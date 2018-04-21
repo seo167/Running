@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D251FC30-D15F-D967-7FDF-5B7BBCCD21BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>J:/U3D/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>J:/U3D/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\GameScenen.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\Player\Player.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\Player\PlayerControl.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\Player\PlayerModel.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\Pool\CoinPool.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\Pool\ItemPool.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\Pool\PatternPool.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\Fall.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\Jump.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\LeftMove.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\PlayerState.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\PlayerStateManager.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\RightMove.cs" />
+     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\Run.cs" />
+     <Compile Include="Assets\Game\ScenenScript\HomeScenen\ButtonArrayPlane.cs" />
+     <Compile Include="Assets\Game\ScenenScript\HomeScenen\HomeScenen.cs" />
+     <Compile Include="Assets\Game\ScenenScript\HomeScenen\MainTitle.cs" />
+     <Compile Include="Assets\Script\WJXFame\AI\AIFsm.cs" />
+     <Compile Include="Assets\Script\WJXFame\AI\AIState.cs" />
+     <Compile Include="Assets\Script\WJXFame\AI\AISystem.cs" />
+     <Compile Include="Assets\Script\WJXFame\AI\AIType.cs" />
+     <Compile Include="Assets\Script\WJXFame\AI\Cluster\ClusterAI.cs" />
+     <Compile Include="Assets\Script\WJXFame\AI\Cluster\DisperseAI.cs" />
+     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadAsset.cs" />
+     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadFAssetBundle.cs" />
+     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadFAssetStream.cs" />
+     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadFJson.cs" />
+     <Compile Include="Assets\Script\WJXFame\Asset\ResCalc.cs" />
+     <Compile Include="Assets\Script\WJXFame\Asset\ResourseAssetManager.cs" />
+     <Compile Include="Assets\Script\WJXFame\Asset\SetGameObject\SetGameObject.cs" />
+     <Compile Include="Assets\Script\WJXFame\GameConfig.cs" />
+     <Compile Include="Assets\Script\WJXFame\GameState.cs" />
+     <Compile Include="Assets\Script\WJXFame\Loading\LoadGame.cs" />
+     <Compile Include="Assets\Script\WJXFame\ParticleController.cs" />
+     <Compile Include="Assets\Script\WJXFame\Pool\PoolBase.cs" />
+     <Compile Include="Assets\Script\WJXFame\Pool\PoolManager.cs" />
+     <Compile Include="Assets\Script\WJXFame\Pool\PoolType.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Audio.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioBase.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioFSMState.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioPlane.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioSetting.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioSystem.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\BGMAudio.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\AudioShadeBig.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\AudioShadeSmall.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\BGMRandomPlay.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\SoundEffect.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\SoundEffectManager.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\RepeatePlayAudio.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\ScenenSystem\ScenenController.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\ScenenSystem\ScenenState.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\ScenenSystem\ScenenSystem.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\SystemBase.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\SystemController.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Config\UIConfig.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Extension\UIDictionaryExtension.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIController.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIJson.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIModel.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIPlane.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIPool.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIType.cs" />
+     <Compile Include="Assets\Script\WJXFame\System\UISystem\UIManager.cs" />
+     <None Include="Assets\Script\DOTween\readme.txt" />
+     <None Include="Assets\Script\DOTween\DOTween50.xml" />
+     <None Include="Assets\Game\Res\Shader\Unlit-Transparent Cutout (Cull off).shader" />
+     <None Include="Assets\Game\Res\Shader\Toony-Basic.shader" />
+     <None Include="Assets\Game\Res\Shader\Curved.shader" />
+     <None Include="Assets\Script\DOTween\DOTween46.xml" />
+     <None Include="Assets\Script\DOTween\DOTween43.xml" />
+     <None Include="Assets\Game\Res\Shader\Toony-BasicOutline.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

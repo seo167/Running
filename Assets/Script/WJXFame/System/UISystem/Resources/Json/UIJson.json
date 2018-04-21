@@ -1,0 +1,13 @@
+{
+  "_uiJson": [
+    {
+      "_uiType": 0,
+      "_uiPath": "UIPanel/ItemMessagePanel"
+    },
+
+    {
+      "_uiType": 1,
+      "_uiPath": "UIPanel/KnapsackPanel"
+    }
+  ]
+}
