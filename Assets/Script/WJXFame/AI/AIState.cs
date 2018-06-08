@@ -42,7 +42,7 @@ namespace WJX {
             //开始状态
         }
 
-        public virtual void StateExcue() {
+        public virtual void StateExcue(GameObject _obj=null) {
             //行动状态
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace WJX
 {
@@ -12,6 +13,7 @@ public static class DictionaryExtension  {
             dict.TryGetValue(key, out value);
             return value;
         }
+
     }
 }
 

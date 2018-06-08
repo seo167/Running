@@ -32,9 +32,6 @@ namespace WJX {
         static public void AddResNum(ushort _num) {
             ResCount += _num;
         }
-
-
-
     }
 }
 

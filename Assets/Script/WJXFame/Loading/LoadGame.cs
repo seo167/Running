@@ -16,7 +16,6 @@ namespace WJX {
 
         void Start() {
             Application.LoadLevel("Loading");
-            ScenenController.GetScenenState().ScenenEnd();
         }
 
         public void StartLoad() {
@@ -39,7 +38,7 @@ namespace WJX {
         }
 
         void OnDestroy() {
-            ScenenController.GetScenenState().ScenenStart();
+
         }
 
     }

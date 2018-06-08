@@ -19,62 +19,51 @@ namespace WJX {
             }
         }
 
-        UIPool _UIPool;
+		Dictionary<UIType,UIController> UIControllerDictionary;
 
         private UIManager() {
-            _UIPool = new UIPool();
+			UIControllerDictionary =new Dictionary<UIType,UIController> ();
         }
 
-        public void ShowUI(UIType _type) {
-            _UIPool.ShowUI(_type);
-        }
+		//注册控制器
+		public void RegisterController(UIType type,UIController controller){
+			if(UIControllerDictionary.ContainsKey(type)){
+				if(UIControllerDictionary[type]==null){
+					UIControllerDictionary [type] = controller;
+				}
+				return;
+			}
 
-        public void RegisterUIView(UIType _type, UIPlane _UIPlane) {
-            _UIPool.RegisterPlane(_type,_UIPlane);
-        }
+			UIControllerDictionary.Add (type,controller);
 
-        public void UnRegisterUIView(UIType _type) {
-            _UIPool.UnRegisterPlane(_type);
-        }
+		}
 
-        public void RegisterUIModel(UIType _type, UIModel _UIModel) {
-            _UIPool.RegisterModel(_type,_UIModel);
-        }
-
-        public void UnRegisterUIModel(UIType _type) {
-            _UIPool.UnRegisterModel(_type);
-        }
-
-        public UIModel GetUIModel(UIType _type) {
-            return _UIPool.GetModel(_type);
-        }
-
-        public UIPlane GetUIView(UIType _type) {
-            return _UIPool.GetPlane(_type);
-        }
-
+		/// <summary>
+		/// 执行Controller逻辑
+		/// </summary>
+		/// <param name="_type">Type.</param>
 		public void UILogic(UIType _type){
-            _UIPool.UILogic (_type);
+			if(UIControllerDictionary.ContainsKey(_type)){
+				UIControllerDictionary [_type].ControllerLogic();
+			}
 		}
+			
 
-		public bool IsHasUI(UIType _type){
-			return _UIPool.HasUI (_type);
-		}
-
-		public T GetModelForT<T>(UIType _type) where T:UIModel{
-
-			return _UIPool.GetModelForT<T>(_type);
-		}
-
-		public T GetViewForT<T>(UIType _type) where T:UIPlane{
-
-			return _UIPool.GetViewForT<T>(_type);
+		/// <summary>
+		/// 获取Conteroller
+		/// </summary>
+		/// <returns>The controller for t.</returns>
+		/// <param name="_type">Type.</param>
+		/// <typeparam name="T">The 1st type parameter.</typeparam>
+		public T GetControllerForT<T>(UIType _type) where T:UIController{
+			if(UIControllerDictionary.ContainsKey(_type)){
+				return (T)UIControllerDictionary [_type];
+			}
+			return null;
 		}
 
         public void Clear() {
-            _UIPool.Clear ();
+			UIControllerDictionary.Clear ();
         }
     }
 }
-
-

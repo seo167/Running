@@ -15,10 +15,10 @@ namespace WJX {
 
         float AddTheTime = 0.0f;//在这个时间进行音量调整
 
-        public AudioShadeBig(AudioSource source) : base(source) {
-            AddForMinutes = (1.0f / PlayInterval) / 10.0f;
-            AddTheTime = PlayInterval * AddForMinutes;
-        }
+		protected override void Inite(){
+			AddForMinutes = (1.0f / PlayInterval) / 10.0f;
+			AddTheTime = PlayInterval * AddForMinutes;
+		}
 
         public override void Effect() {
             //获取当前时间

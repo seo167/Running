@@ -66,18 +66,18 @@ namespace WJX {
 		}
 
 		//状态执行
-		public void StateExcue(AIState _AIState,AISystemEnum _AISYSTEMENUM=AISystemEnum.NOTUSEQUEUE) {
+		public void StateExcue(AIState _AIState, GameObject _obj=null,AISystemEnum _AISYSTEMENUM=AISystemEnum.NOTUSEQUEUE) {
 			if(_AIFSM.GetStateID(_AIState)==AIStateID.NULLAIID){
 				return;
 			}
 
 			if(_AIStateS.ContainsKey(_AIFSM.GetStateID(_AIState))){
 				if (_AISYSTEMENUM == AISystemEnum.NOTUSEQUEUE) {
-					_AIStateS [_AIFSM.GetStateID (_AIState)].StateExcue ();
+					_AIStateS [_AIFSM.GetStateID (_AIState)].StateExcue (_obj);
 				} else {
 					AIStates temp = _AIStateS [_AIFSM.GetStateID (_AIState)];
 					AIStateID _id = temp.AIStateIDQueue;
-					_AIStateS [_id].StateExcue ();
+					_AIStateS [_id].StateExcue (_obj);
 				}
 
 			}

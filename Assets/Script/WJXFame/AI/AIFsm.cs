@@ -36,9 +36,8 @@ namespace WJX {
         }
 
         public AIStateID GetStateID(AIState _AIState) {
-            if (!_AIStateDictionary.ContainsKey(_AIState))
-            {
-                Debug.LogError("不存在该AI状态"); return AIStateID.NULLAIID;
+            if (!_AIStateDictionary.ContainsKey(_AIState)){
+                Debug.Log("不存在该AI状态"); return AIStateID.NULLAIID;
             }
 
             return _AIStateDictionary[_AIState];

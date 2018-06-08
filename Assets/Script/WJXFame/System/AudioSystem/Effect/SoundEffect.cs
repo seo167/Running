@@ -15,16 +15,21 @@ namespace WJX {
             }
         }
 
-        public SoundEffect(AudioSource source) {
-            _Source = source;
-        }
+		public void SetAudioSource(AudioSource tempSource){
+			_Source = tempSource;
+			Inite ();
+		}
+
+		protected virtual void Inite(){
+			//.......
+		}
 
         public virtual void Effect() {
             DeleteSound();
         }
 
         protected void DeleteSound() {
-            if (_Source != null&&!( _Source.isPlaying)) {
+			if (_Source != null&&!( _Source.isPlaying)&&!(_Source.loop)) {
                 _CanDelete = true;
                 _Source.clip = null;
                 GameObject.Destroy(_Source.gameObject);

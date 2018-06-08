@@ -28,6 +28,8 @@ public class GameState {
 
 	public static bool IsCustomsClearance=false;//游戏完全通关
 
+	public static bool IsShowBackAD = true;//后台返回是否显示广告
+
 	public static void GameIniteFalse(){
 		ScenceFinish=false;//关卡是否完成
 
@@ -56,6 +58,8 @@ public class GameState {
 		Timer = 0;
 
 		IsCustomsClearance=false;
+
+		IsShowBackAD = true;
 
 	}
 

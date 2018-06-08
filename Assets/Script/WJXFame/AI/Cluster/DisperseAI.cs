@@ -40,7 +40,6 @@ namespace WJX {
             Translation += a * Time.deltaTime;
 
             //计算旋转角度
-            Vector3 dir = Translation - _Transform.position;
             float angle= Vector3.Angle(_Transform.position, Translation);
             _Transform.rotation = Quaternion.Euler(0,0,-angle);
 

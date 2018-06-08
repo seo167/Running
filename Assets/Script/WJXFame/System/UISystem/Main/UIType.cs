@@ -1,6 +1,6 @@
 ﻿public enum UIType {
-    NULL=0,
-    MAINTITLE,
-    BUTTONARRAY,
-    PLAYER
+   	NULL=0,
+    PLAYER,
+    CAMERA
 }
+

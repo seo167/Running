@@ -4,21 +4,30 @@ using UnityEngine;
 using UnityEngine.Events;
 
 namespace WJX{
+	//新版本将改成时间判断,取消Update
 	public class Audio : MonoBehaviour {
 
-		AudioSource mAudioSource;
+		AudioSource _AudioSource;
 
 		string MyAudioName;
 
-        public void Inite(AudioSource _AudioSource) {
-            mAudioSource = _AudioSource;
-            StartCoroutine("RemoveMusic");
+		float AudioLength;//音频长度
+
+        void Awkae() {
+            _AudioSource = GetComponent<AudioSource>();
+            AudioLength = _AudioSource.clip.length;
         }
 
-        IEnumerator RemoveMusic() {
-            yield return new WaitForSeconds(mAudioSource.clip.length);
-            Destroy(mAudioSource.gameObject);
-        }
+		IEnumerator Start(){
+
+			yield return new WaitForSeconds (AudioLength+0.5f);
+
+			while(_AudioSource.loop){
+				yield return null;
+			}
+
+			DestroyObject (this.gameObject);
+		}
 
 	}
 }
