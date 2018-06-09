@@ -63,11 +63,9 @@ public class Player : UIPlane {
     public override void OnEnter(UnityAction _Action = null){
 
         _Animation.Play("ready01");
-        UIManager.Instace.UILogic(UIType.CAMERA);
     }
 
-    public override void Begin(UnityAction _Action = null)
-    {
+    public override void Begin(UnityAction _Action = null){
         StartCoroutine(Move());
     }
 

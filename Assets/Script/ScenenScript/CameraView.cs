@@ -129,18 +129,19 @@ public class CameraView : UIPlane {
     //修改摄像机方向和角度
     IEnumerator Change(UnityAction _Action,float speed) {
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
 
         while (true) {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(0, 2, -5), speed * Time.deltaTime);
-            transform.LookAt(target, Vector3.up);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(0, 4.5f, -5), speed * Time.deltaTime);
+            transform.rotation=Quaternion.Slerp(transform.rotation,Quaternion.Euler(20.0f,0.0f,0.0f), 10*speed* Time.deltaTime);
             yield return null;
 
             float y = transform.position.y;
             float z = transform.position.z;
 
-            if (Mathf.Abs(y-2)<=0.1f||Mathf.Abs(z-5)<=0.1f) {
-                break;
+            if (Mathf.Abs(y-4.5f)<=0.1f||Mathf.Abs(z-5)<=0.1f) {
+                transform.rotation = Quaternion.Euler(20,0,0);
+               break;
             }
         }
 

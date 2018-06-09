@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace WJX {
 
-
     public class UIManager
     {
         private static UIManager _uiManager;

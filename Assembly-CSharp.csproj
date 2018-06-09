@@ -5,7 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{D251FC30-D15F-D967-7FDF-5B7BBCCD21BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,111 +47,70 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\GameScenen.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\Player\Player.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\Player\PlayerControl.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\Player\PlayerModel.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\Pool\CoinPool.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\Pool\ItemPool.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\Pool\PatternPool.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\Fall.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\Jump.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\LeftMove.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\PlayerState.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\PlayerStateManager.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\RightMove.cs" />
-     <Compile Include="Assets\Game\ScenenScript\GameScenen\State\Run.cs" />
-     <Compile Include="Assets\Game\ScenenScript\HomeScenen\ButtonArrayPlane.cs" />
-     <Compile Include="Assets\Game\ScenenScript\HomeScenen\HomeScenen.cs" />
-     <Compile Include="Assets\Game\ScenenScript\HomeScenen\MainTitle.cs" />
-     <Compile Include="Assets\Script\WJXFame\AI\AIFsm.cs" />
-     <Compile Include="Assets\Script\WJXFame\AI\AIState.cs" />
-     <Compile Include="Assets\Script\WJXFame\AI\AISystem.cs" />
-     <Compile Include="Assets\Script\WJXFame\AI\AIType.cs" />
-     <Compile Include="Assets\Script\WJXFame\AI\Cluster\ClusterAI.cs" />
-     <Compile Include="Assets\Script\WJXFame\AI\Cluster\DisperseAI.cs" />
-     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadAsset.cs" />
-     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadFAssetBundle.cs" />
-     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadFAssetStream.cs" />
-     <Compile Include="Assets\Script\WJXFame\Asset\LoadAsset\LoadFJson.cs" />
-     <Compile Include="Assets\Script\WJXFame\Asset\ResCalc.cs" />
-     <Compile Include="Assets\Script\WJXFame\Asset\ResourseAssetManager.cs" />
-     <Compile Include="Assets\Script\WJXFame\Asset\SetGameObject\SetGameObject.cs" />
-     <Compile Include="Assets\Script\WJXFame\GameConfig.cs" />
-     <Compile Include="Assets\Script\WJXFame\GameState.cs" />
-     <Compile Include="Assets\Script\WJXFame\Loading\LoadGame.cs" />
-     <Compile Include="Assets\Script\WJXFame\ParticleController.cs" />
-     <Compile Include="Assets\Script\WJXFame\Pool\PoolBase.cs" />
-     <Compile Include="Assets\Script\WJXFame\Pool\PoolManager.cs" />
-     <Compile Include="Assets\Script\WJXFame\Pool\PoolType.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Audio.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioBase.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioFSMState.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioPlane.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioSetting.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioSystem.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\BGMAudio.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\AudioShadeBig.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\AudioShadeSmall.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\BGMRandomPlay.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\SoundEffect.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\SoundEffectManager.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\AudioSystem\RepeatePlayAudio.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\ScenenSystem\ScenenController.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\ScenenSystem\ScenenState.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\ScenenSystem\ScenenSystem.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\SystemBase.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\SystemController.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Config\UIConfig.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Extension\UIDictionaryExtension.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIController.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIJson.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIModel.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIPlane.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIPool.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIType.cs" />
-     <Compile Include="Assets\Script\WJXFame\System\UISystem\UIManager.cs" />
-     <None Include="Assets\Script\DOTween\readme.txt" />
-     <None Include="Assets\Script\DOTween\DOTween50.xml" />
-     <None Include="Assets\Game\Res\Shader\Unlit-Transparent Cutout (Cull off).shader" />
-     <None Include="Assets\Game\Res\Shader\Toony-Basic.shader" />
-     <None Include="Assets\Game\Res\Shader\Curved.shader" />
-     <None Include="Assets\Script\DOTween\DOTween46.xml" />
-     <None Include="Assets\Script\DOTween\DOTween43.xml" />
-     <None Include="Assets\Game\Res\Shader\Toony-BasicOutline.shader" />
- <Reference Include="UnityEngine.UI">
- <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="nunit.framework">
- <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VR">
- <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="DOTween43">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween43.dll</HintPath>
- </Reference>
- <Reference Include="DOTween46">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween46.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween50.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Script\ScenenScript\CameraView.cs" />
+    <Compile Include="Assets\Script\ScenenScript\GameScenen.cs" />
+    <Compile Include="Assets\Script\ScenenScript\PlayGame.cs" />
+    <Compile Include="Assets\Script\ScenenScript\Player.cs" />
+    <Compile Include="Assets\Script\WJXFame\AI\AIFsm.cs" />
+    <Compile Include="Assets\Script\WJXFame\AI\AIState.cs" />
+    <Compile Include="Assets\Script\WJXFame\AI\AISystem.cs" />
+    <Compile Include="Assets\Script\WJXFame\AI\AIType.cs" />
+    <Compile Include="Assets\Script\WJXFame\AI\Cluster\ClusterAI.cs" />
+    <Compile Include="Assets\Script\WJXFame\AI\Cluster\DisperseAI.cs" />
+    <Compile Include="Assets\Script\WJXFame\Asset\AssetInite.cs" />
+    <Compile Include="Assets\Script\WJXFame\Asset\AssetIniteEdit.cs" />
+    <Compile Include="Assets\Script\WJXFame\Asset\ResCalc.cs" />
+    <Compile Include="Assets\Script\WJXFame\Asset\ResourseAssetManager.cs" />
+    <Compile Include="Assets\Script\WJXFame\EnumCollection.cs" />
+    <Compile Include="Assets\Script\WJXFame\GameState.cs" />
+    <Compile Include="Assets\Script\WJXFame\Loading\LoadGame.cs" />
+    <Compile Include="Assets\Script\WJXFame\Scenen\ScenenController.cs" />
+    <Compile Include="Assets\Script\WJXFame\Scenen\ScenenRoot.cs" />
+    <Compile Include="Assets\Script\WJXFame\Scenen\ScenenState.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Audio.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\AudioSystem\AudioSystem.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\AudioShadeBig.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\AudioShadeSmall.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\AudioSystem\Effect\SoundEffect.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\AudioSystem\SoundType.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\FSMSystem\FSM.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\FSMSystem\FSMSystem.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\ParticleSystem\ParticleController.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\ParticleSystem\ParticleLife.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\PoolSystem\PoolSystem.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\Config\UIConfig.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\Extension\UIDictionaryExtension.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIController.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIJson.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIModel.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIPlane.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\Main\UIType.cs" />
+    <Compile Include="Assets\Script\WJXFame\System\UISystem\UIManager.cs" />
+    <None Include="Assets\Res\Shader\Unlit-Transparent Cutout (Cull off).shader" />
+    <None Include="Assets\Res\Shader\Toony-Basic.shader" />
+    <None Include="Assets\Res\Shader\Curved.shader" />
+    <None Include="Assets\Res\Shader\Toony-BasicOutline.shader" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -160,5 +120,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

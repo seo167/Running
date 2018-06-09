@@ -46,15 +46,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\WJXFame\Editor\Tools.cs" />
-     <None Include="Assets\Script\DOTween\readme.txt" />
-     <None Include="Assets\Script\DOTween\DOTween50.xml" />
-     <None Include="Assets\Game\Res\Shader\Unlit-Transparent Cutout (Cull off).shader" />
-     <None Include="Assets\Game\Res\Shader\Toony-Basic.shader" />
-     <None Include="Assets\Game\Res\Shader\Curved.shader" />
-     <None Include="Assets\Script\DOTween\DOTween46.xml" />
-     <None Include="Assets\Script\DOTween\DOTween43.xml" />
-     <None Include="Assets\Game\Res\Shader\Toony-BasicOutline.shader" />
+     <Compile Include="Assets\Script\WJXFame\Editor\ITool\CreateAssetSetting.cs" />
+     <None Include="Assets\Res\Shader\Unlit-Transparent Cutout (Cull off).shader" />
+     <None Include="Assets\Res\Shader\Toony-Basic.shader" />
+     <None Include="Assets\Res\Shader\Curved.shader" />
+     <None Include="Assets\Res\Shader\Toony-BasicOutline.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>J:/U3D/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -108,21 +104,6 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>J:/U3D/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="DOTween43">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween43.dll</HintPath>
- </Reference>
- <Reference Include="DOTween46">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween46.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/DOTween50.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>H:/U3d/Running/Assets/Script/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
