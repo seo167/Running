@@ -23,10 +23,15 @@ namespace WJX {
             FsmDictionay = new Dictionary<string, List<FSM>>();
         }
 
-        public void Resgister(string FsmName,List<FSM> _list) {
+        //注册状态列表
+        public void Resgister(string FsmName,FSM _fsm) {
             if (!FsmDictionay.ContainsKey(FsmName)) {
+                List<FSM> _list = new List<FSM>();
                 FsmDictionay.Add(FsmName,_list);
             }
+
+            if(!FsmDictionay[FsmName].Contains(_fsm))
+                FsmDictionay[FsmName].Add(_fsm);
         }
 
         public void UnRegister(string FsmName) {
@@ -35,8 +40,12 @@ namespace WJX {
             }
         }
 
-        
-
+        public FSM GetFSM(string FsmName,int num){
+            if(FsmDictionay.ContainsKey(FsmName)){
+                return FsmDictionay[FsmName][num];
+            }
+            return null;
+        }
     }
 }
 

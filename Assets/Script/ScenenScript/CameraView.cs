@@ -23,6 +23,7 @@ public class CameraController : UIController {
     //计算摄像机和目标对象的距离
     void SetDistance() {
         _CameraModel.Distance = _CameraView.GetTarget.position.z - _CameraView.transform.position.z;
+       
         _CameraView.Logic(UIManager.Instace.GetControllerForT<PlayerController>(UIType.PLAYER).GetPlayerModel.Speed,_CameraModel.Distance);
         UIManager.Instace.UILogic(UIType.PLAYER);
     }
@@ -63,7 +64,7 @@ public class CameraModel : UIModel {
     }
 
 
-    float changeSpeed=1.5f;
+    float changeSpeed=5.0f;
 
     public float ChangeSpeed {
         get {
@@ -133,7 +134,7 @@ public class CameraView : UIPlane {
 
         while (true) {
             transform.position = Vector3.Lerp(transform.position, new Vector3(0, 4.5f, -5), speed * Time.deltaTime);
-            transform.rotation=Quaternion.Slerp(transform.rotation,Quaternion.Euler(20.0f,0.0f,0.0f), 10*speed* Time.deltaTime);
+            transform.rotation=Quaternion.Slerp(transform.rotation,Quaternion.Euler(20.0f,0.0f,0.0f), 20*speed* Time.deltaTime);
             yield return null;
 
             float y = transform.position.y;
