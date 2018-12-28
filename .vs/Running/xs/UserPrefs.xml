@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{D251FC30-D15F-D967-7FDF-5B7BBCCD21BF}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/WJXFame/System/FSMSystem/FSM.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/ScenenScript/Player/PlayerState.cs">
     <Files>
-      <File FileName="Assets/Script/WJXFame/GameState.cs" Line="35" Column="9" />
-      <File FileName="Assets/Script/WJXFame/AI/AIState.cs" Line="14" Column="9" />
-      <File FileName="Assets/Script/ScenenScript/CameraView.cs" Line="26" Column="8" />
-      <File FileName="Assets/Script/WJXFame/System/UISystem/Main/UIController.cs" Line="7" Column="9" />
-      <File FileName="Assets/Script/WJXFame/System/FSMSystem/FSMSystem.cs" Line="33" Column="53" />
-      <File FileName="Assets/Script/ScenenScript/Player/Player.cs" Line="96" Column="5" />
-      <File FileName="Assets/Script/WJXFame/Loading/LoadGame.cs" Line="18" Column="12" />
-      <File FileName="Assets/Script/WJXFame/System/FSMSystem/FSM.cs" Line="12" Column="23" />
-      <File FileName="Assets/Script/ScenenScript/GameScenen.cs" Line="13" Column="2" NotebookId="1" />
-      <File FileName="Assets/Script/ScenenScript/Player/PlayerState.cs" Line="154" Column="20" NotebookId="1" />
+      <File FileName="Assets/Script/ScenenScript/Player/Player.cs" Line="126" Column="1" />
+      <File FileName="Assets/Script/ScenenScript/PlayGame.cs" Line="13" Column="1" />
+      <File FileName="Assets/Script/WJXFame/Scenen/ScenenController.cs" Line="10" Column="1" />
+      <File FileName="Assets/Script/WJXFame/Scenen/ScenenRoot.cs" Line="16" Column="1" />
+      <File FileName="Assets/Script/ScenenScript/PropView.cs" Line="18" Column="1" />
+      <File FileName="Assets/Script/WJXFame/System/AudioSystem/AudioSystem.cs" Line="42" Column="43" />
+      <File FileName="Assets/Script/ScenenScript/Player/PlayerState.cs" Line="16" Column="1" />
+      <File FileName="Assets/Script/WJXFame/System/UISystem/UIManager.cs" Line="32" Column="6" NotebookId="1" />
+      <File FileName="Assets/Script/ScenenScript/GameScenen.cs" Line="80" Column="41" NotebookId="1" />
+      <File FileName="Assets/Script/WJXFame/System/ParticleSystem/ParticleController.cs" Line="42" Column="32" NotebookId="1" />
+      <File FileName="Assets/Script/WJXFame/System/PoolSystem/PoolSystem.cs" Line="48" Column="1" NotebookId="1" />
+      <File FileName="Assets/Script/WJXFame/GameState.cs" Line="37" Column="21" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

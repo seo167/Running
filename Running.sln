@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Running", "Assembly-CSharp.csproj", "{D251FC30-D15F-D967-7FDF-5B7BBCCD21BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Running", "Assembly-CSharp-Editor.csproj", "{DC73ABF5-CBD6-23D5-145E-7DA4CDBD0DE5}"
