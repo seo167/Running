@@ -46,7 +46,6 @@ namespace Farmework {
                     ScenenLateAction += action;
                     break;
             }
-           
         }
 
         public void UnRegisterAction(Action action, GameManagerActionType type) {

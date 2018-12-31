@@ -1,16 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Farmework;
-public class CoinArray : MonoBehaviourSimply {
+public class CoinArray : MonoBehaviour {
 
     List<Coin> CoinList = new List<Coin>();
-
-    protected override void OnBeforeDestroy()
-    {
-        
-    }
-
     // Use this for initialization
     void Awake () {
         for (int i=0;i<transform.childCount;++i) {

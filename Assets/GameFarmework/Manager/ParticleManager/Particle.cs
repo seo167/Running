@@ -12,14 +12,14 @@ public class Particle : MonoBehaviourSimply {
     }
 
     // Use this for initialization
-    void Start () {
+    IEnumerator Start () {
         _PS = GetComponent<ParticleSystem>();
-        DelayLoopCoroutine((bool isLoop)=> {
-            isLoop = _PS.isPlaying;
-        },()=> {
-            GameObject.Destroy(_PS.gameObject);
-        });
+        while (_PS.isPlaying) {
+            yield return new WaitForEndOfFrame();
+        }
+        GameObject.Destroy(gameObject);
     }
+
 
     protected override void OnBeforeDestroy(){
 

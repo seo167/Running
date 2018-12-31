@@ -23,7 +23,7 @@ public class Coin :MonoBehaviourSimply  {
     }
 
     private void FixedUpdate(){
-        if (_Player.isMagnet||transform.position!=DefaultPos) {
+        if (_Player.isMagnet) {
             Vector3 PlayerPos = _Player.transform.position;
             float distance = Vector3.Distance(PlayerPos, transform.position);
             if (distance < 5.0f){

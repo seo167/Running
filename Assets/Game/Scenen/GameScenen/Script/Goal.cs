@@ -13,8 +13,11 @@ public class Goal : MonoBehaviourSimply {
         }
     }
 
+    Vector3 GoalDefaultPos;
+
     private void Awake(){
         RegisterObj();
+        GoalDefaultPos = _Goal.transform.position;
         RegisterMsg("Goal", GoalKeeper);
         ShouMenYuanAnimation = _Goal.GetComponent<Animation>();
     }
@@ -31,9 +34,16 @@ public class Goal : MonoBehaviourSimply {
             case 1:
                 ShouMenYuanAnimation.Play("left_flutter");
                 break;
+            case 2:
+                ShouMenYuanAnimation.Play("fly");
+                break;
         }
         DelayCoroutine(1.0f,()=> {
             SetObject.Hide(_Goal);
+            ShouMenYuanAnimation.Play("standard");
+            _Goal.transform.localPosition = Vector3.zero;
+            _Goal.transform.localRotation = Quaternion.Euler(0,0,0);
+           
         });
     }
 
